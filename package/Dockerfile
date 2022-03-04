@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install -y curl vim nfs-common iproute2 dnsutils iputils-ping zip xfsprogs
+RUN apt-get update && apt-get install -y xfsprogs
 
 COPY bin/harvester-csi-driver /usr/bin/
 
